@@ -68,7 +68,6 @@ static void *emptySubTitleLabelKey = @"emptySubTitleLabelKey";
         [[tap rac_gestureSignal] subscribeNext:^(id x) {
             clickBlock();
             self.scrollEnabled = YES;
-            [self.emptyBackView removeFromSuperview];
         }];
         [self.emptyBackView addGestureRecognizer:tap];
 
